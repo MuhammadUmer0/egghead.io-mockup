@@ -13,6 +13,10 @@ header {
   height: 60px;
   width: 100%;
   background-color: #141618;
+}
+nav {
+  display: flex;
+  align-items: center;
   display: flex;
   justify-content: space-between;
 }
@@ -26,6 +30,14 @@ li {
   color: white;
 }
 li a {
+  color: white;
+}
+li button {
+  height: 25px;
+  width: 80px;
+  background-color: green;
+  border-radius: 5px;
+  border: none;
   color: white;
 }
 .leftNav {
@@ -174,26 +186,126 @@ p {
   width: 50px;
   border-radius: 50%;
 }
+.review .imgText {
+  display: flex;
+  align-items: center;
+}
 .createAcc {
-  height: 550px;
+  height: 622px;
   width: 100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-direction: row;
 }
 .createAcc button {
   background-color: #278654;
   height: 50px;
-  width: 250px;
+  width: 270px;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   border: 1px solid #278654;
   border-radius: 5px;
   text-transform: uppercase;
-  margin-top: 5em;
+  cursor: pointer;
+  margin-top: 2em;
 }
 .createAcc img {
-  height: 480px;
-  width: 480px;
+  height: 300px;
+  width: 500px;
+  margin-top: 20rem;
+}
+.heroImage {
+  height: 500px;
+  width: 535px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer {
+  background-color: #141618;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 700px;
+}
+footer img {
+  height: 35px;
+  width: 100px;
+}
+.footerLinksCol {
+  height: 200px;
+  width: 250px;
+  background-color: violet;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 2rem;
+}
+.footerLinksRow {
+  height: 200px;
+  width: 100%;
+  background-color: yellowgreen;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+footer ul {
+  text-transform: uppercase;
+}
+footer li .linksHeading {
+  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir,
+    helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial,
+    sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 2rem;
+  letter-spacing: 0.1em;
+}
+footer li .links {
+  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir,
+    helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial,
+    sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+}
+footer .search {
+  height: 100px;
+  width: 500px;
+}
+footer h3 {
+  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir,
+    helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial,
+    sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  color: white;
+}
+footer input {
+  height: 45px;
+  border-radius: 5px;
+  background-color: #21252d;
+  color: white;
+  border: none;
+  padding-left: 5px;
+  outline: none;
+}
+footer .searchBtn img {
+  height: 45px;
+  width: 45px;
+  background: #316aff;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}
+footer .searchtxt {
+  display: flex;
 }
