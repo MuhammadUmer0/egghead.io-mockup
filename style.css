@@ -10,18 +10,21 @@ a {
   text-decoration: none;
 }
 header {
-  height: 60px;
+  height: 120px;
   width: 100%;
   background-color: #141618;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+
 }
 nav {
-  display: flex;
-  align-items: center;
+  height: 120px;
   display: flex;
   justify-content: space-between;
 }
 ul {
-  margin-top: 1.5em;
+  align-items: center;
 }
 li {
   list-style-type: none;
@@ -33,21 +36,34 @@ li a {
   color: white;
 }
 li button {
-  height: 25px;
-  width: 80px;
-  background-color: green;
+  height: 35px;
+  width: 85px;
+  background-color: #278654;
   border-radius: 5px;
   border: none;
   color: white;
+  font-size: 15px;
+  line-height: 17px;
+  font-weight: 600;
+  outline: none;
+  cursor: pointer;
+}
+.search{
+  display: flex;
+  justify-content: center;
+  height:50px;
+  width:100%;
+  margin: auto;
+  margin-bottom: 1.5em;
 }
 .leftNav {
-  height: 100px;
+  height: 60px;
   width: 35vw;
   display: flex;
   justify-content: space-around;
 }
 .rightNav {
-  height: 100px;
+  height: 60px;
   width: 300px;
   display: flex;
   justify-content: flex-end;
@@ -55,12 +71,12 @@ li button {
 }
 input {
   height: 40px;
-  width: 80%;
+  width: 95%;
   background-color: black;
   color: white;
 }
 main {
-  height: 550px;
+  height: 930px;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -92,11 +108,35 @@ main button {
   border: 1px solid #1662ff;
   border-radius: 5px;
   text-transform: uppercase;
-  margin-top: 5em;
+  margin-top: 2.5em;
+  outline: none;
+  cursor: pointer;
+  transition: .2s;
+}
+main button:hover {
+  background-color: #2662f0;
+  height: 50px;
+  width: 250px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  border: 1px solid #1662ff;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-top: 2.5em;
+  outline: none;
+  cursor: pointer;
+  transform: scale(1.05);
 }
 main img {
   height: 480px;
   width: 480px;
+  transition: .2s;  
+}
+main img:hover {
+  height: 480px;
+  width: 480px;
+  transform: scale(1.05);
 }
 section {
   height: auto;
@@ -128,6 +168,19 @@ section .imgStyle {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  transition: .2s; 
+}
+section .imgStyle:hover {
+  height: 180px;
+  width: 180px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1.05);
 }
 .imgStyle h3 {
   font-size: 18px;
@@ -210,6 +263,21 @@ p {
   text-transform: uppercase;
   cursor: pointer;
   margin-top: 2em;
+  transition: .2s;
+}
+.createAcc button:hover {
+  background-color: #278654;
+  height: 50px;
+  width: 270px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  border: 1px solid #278654;
+  border-radius: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 2em;
+  transform: scale(1.05);
 }
 .createAcc img {
   height: 300px;
@@ -229,16 +297,15 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 500px;
+  height: 450px;
 }
 footer img {
   height: 35px;
   width: 100px;
 }
 .footerLinksCol {
-  height: 200px;
-  width: 250px;
-  background-color: violet;
+  height: 250px;
+  width: 200px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -247,7 +314,6 @@ footer img {
 .footerLinksRow {
   height: 200px;
   width: 100%;
-  background-color: yellowgreen;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -258,47 +324,52 @@ footer img {
 footer ul {
   text-transform: uppercase;
 }
-footer li .linksHeading {
-  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir,
-    helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial,
+footer .linksHeadings {
+  font-family: "avenir next", helvetica, "helvetica neue", "segoe ui", arial,
     sans-serif;
   font-weight: 600;
   font-size: 14px;
   line-height: 16px;
   color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 2rem;
+  margin-bottom: 1em;
+  margin-top: 1em;
   letter-spacing: 0.1em;
 }
-footer li .links {
-  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir,
-    helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial,
+footer .links {
+  font-family: "avenir next", helvetica, "helvetica neue", "segoe ui", arial,
     sans-serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
-  color: white;
+  line-height: 30px;
+  color:rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+}
 }
 footer .search {
   height: 100px;
   width: 500px;
 }
 footer h3 {
-  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir,
-    helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial,
+  font-family: "avenir next", helvetica, "helvetica neue", "segoe ui", arial,
     sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 23px;
   color: white;
 }
-footer input {
-  height: 45px;
+ input {
+  height: 50px;
   border-radius: 5px;
   background-color: #21252d;
   color: white;
   border: none;
-  padding-left: 5px;
+  padding-left: 10px;
   outline: none;
+  font-family: sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
 }
 footer .searchBtn img {
   height: 45px;
@@ -308,15 +379,21 @@ footer .searchBtn img {
   border-radius: 5px;
   border: none;
 }
+.footerSearch{
+  margin-right: 2em;
+  width: 430px;
+}
 footer .searchtxt {
   display: flex;
 }
 footer .lastRow {
-  height: 100px;
+  height: 200px;
   width: 90%;
   display: flex;
   justify-content: flex-start;
   border-top: 1px solid #e1e1e1;
+  margin-top: 2em;
+  color: white;
 }
 .lastRow .links {
   font-family: Helvetica;
@@ -325,11 +402,20 @@ footer .lastRow {
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
+  margin-top: 1em;
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
 }
-.links a{
+.links a {
   text-decoration: none;
-  color: white;
-
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: none;
+}
+.links p{
+  color: rgba(255, 255, 255, 0.8);
+}
+.links li a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
 }

@@ -16,7 +16,7 @@
         <!--nav start-->
         <ul class="leftNav">
           <!--ul start leftNav-->
-          <li>
+          <li class="btnImg">
             <a href="index.html"><img src="image.png" alt=""/></a>
           </li>
           <li><a href="#">Topics</a></li>
@@ -25,14 +25,14 @@
         <!--ul end leftNav-->
         <ul class="rightNav">
           <!--ul start rightNav-->
-          <li><button type="submit">Join Now</button></li>
+          <li class="btnImg"><button type="submit">Join Now</button></li>
           <li><a href="#">Sign in</a></li>
         </ul>
         <!--ul end rightNav-->
-        <!-- <div class="search">
-            <input type="text" placeholder="Search" />
-          </div> -->
       </nav>
+      <div class="search">
+        <input type="text" placeholder="Search" />
+      </div>
       <!--nav end-->
     </header>
     <!--header end-->
@@ -42,7 +42,7 @@
         <!--main content-->
         Learn the best JavaScript tools and frameworks from industry pros.
         <p>Video tutorials for badass web developers.</p>
-        <button type="submit">click to start learning</button>
+        <button type="submit" class="effects">click to start learning</button>
         <!--main button-->
       </div>
       <!--main content end-->
@@ -58,30 +58,14 @@
           <!--img row start-->
           <div class="imgStyle">
             <!--img style start-->
-            <img src="javascriptlang3.png" />
+            <img src="javascriptlang.png" />
             <h3>JavaScript</h3>
           </div>
           <!--img style end-->
           <div class="imgStyle">
             <!--img style start-->
-            <img src="javascriptlang3.png" />
-            <h3>JavaScript</h3>
-          </div>
-          <!--img style end-->
-        </div>
-        <!--img row end-->
-        <div class="imgRow">
-          <!--img row start-->
-          <div class="imgStyle">
-            <!--img style start-->
-            <img src="javascriptlang3.png" />
-            <h3>JavaScript</h3>
-          </div>
-          <!--img style end-->
-          <div class="imgStyle">
-            <!--img style start-->
-            <img src="javascriptlang3.png" />
-            <h3>JavaScript</h3>
+            <img src="react.png" />
+            <h3>React</h3>
           </div>
           <!--img style end-->
         </div>
@@ -90,14 +74,30 @@
           <!--img row start-->
           <div class="imgStyle">
             <!--img style start-->
-            <img src="javascriptlang3.png" />
-            <h3>JavaScript</h3>
+            <img src="typescriptlang.png" />
+            <h3>TypeScipt</h3>
           </div>
           <!--img style end-->
           <div class="imgStyle">
             <!--img style start-->
-            <img src="javascriptlang3.png" />
-            <h3>JavaScript</h3>
+            <img src="xstate.png" />
+            <h3>XState</h3>
+          </div>
+          <!--img style end-->
+        </div>
+        <!--img row end-->
+        <div class="imgRow">
+          <!--img row start-->
+          <div class="imgStyle">
+            <!--img style start-->
+            <img src="gatsby.png" />
+            <h3>Gatsby</h3>
+          </div>
+          <!--img style end-->
+          <div class="imgStyle">
+            <!--img style start-->
+            <img src="aws.png" />
+            <h3>AWS</h3>
           </div>
           <!--img style end-->
         </div>
@@ -157,23 +157,26 @@
     <footer>
       <div class="footerLinksRow">
         <div class="footerLinksCol">
-          <!-- <img src="image.png" /> -->
           <ul>
-            <li class="linksHeading">content</li>
+            <li>
+              <a href="index.html"><img src="image.png"/></a>
+            </li>
+            <li class="linksHeadings">content</li>
             <li class="links"><a href="#">Browse</a></li>
             <li class="links"><a href="#">Courses</a></li>
             <li class="links"><a href="#">Lessons</a></li>
             <li class="links"><a href="#">Podcasts</a></li>
           </ul>
           <ul>
-            <li class="linksHeading">content</li>
-            <li class="links"><a href="#">Browse</a></li>
-            <li class="links"><a href="#">Courses</a></li>
-            <li class="links"><a href="#">Lessons</a></li>
-            <li class="links"><a href="#">Podcasts</a></li>
+            <li class="linksHeadings" style="margin-top: 3.7em;">About</li>
+            <li class="links"><a href="#">Pricing</a></li>
+            <li class="links"><a href="#">Instrutors</a></li>
+            <li class="links"><a href="#">Stories</a></li>
+            <li class="links"><a href="#">Team</a></li>
+            <li class="links"><a href="#">Store</a></li>
           </ul>
         </div>
-        <div class="search">
+        <div class="footerSearch">
           <h3>Search for Lessons and Courses</h3>
           <div class="searchtxt">
             <input type="text" placeholder="e.g. JavaScript, React" />
@@ -186,9 +189,9 @@
       <div class="lastRow">
         <div class="links">
           <p><a href="#">Terms & Conditions</a></p>
-          <p><a href="index.html">© egghead.io</a></p>
+          <p>© egghead.io</p>
         </div>
-        </div>
+      </div>
     </footer>
   </body>
 </html>
