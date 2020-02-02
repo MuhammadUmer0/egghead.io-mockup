@@ -242,6 +242,8 @@ p {
 .review .imgText {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 220px;
 }
 .createAcc {
   height: 622px;
