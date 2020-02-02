@@ -16,7 +16,6 @@ header {
   display: flex;
   flex-direction: column;
   position: fixed;
-
 }
 nav {
   height: 120px;
@@ -29,11 +28,12 @@ ul {
 li {
   list-style-type: none;
   font-size: 14px;
+  line-height: 16px;
   font-weight: 400;
-  color: white;
+  color: #a9aaab;
 }
 li a {
-  color: white;
+  color: #a9aaab;
 }
 li button {
   height: 35px;
@@ -48,11 +48,11 @@ li button {
   outline: none;
   cursor: pointer;
 }
-.search{
+.search {
   display: flex;
   justify-content: center;
-  height:50px;
-  width:100%;
+  height: 50px;
+  width: 100%;
   margin: auto;
   margin-bottom: 1.5em;
 }
@@ -64,7 +64,8 @@ li button {
 }
 .rightNav {
   height: 60px;
-  width: 300px;
+  width: 170px;
+  margin-right: 1.5em;
   display: flex;
   justify-content: flex-end;
   justify-content: space-around;
@@ -111,7 +112,7 @@ main button {
   margin-top: 2.5em;
   outline: none;
   cursor: pointer;
-  transition: .2s;
+  transition: 0.2s;
 }
 main button:hover {
   background-color: #2662f0;
@@ -131,7 +132,7 @@ main button:hover {
 main img {
   height: 480px;
   width: 480px;
-  transition: .2s;  
+  transition: 0.2s;
 }
 main img:hover {
   height: 480px;
@@ -168,7 +169,7 @@ section .imgStyle {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: .2s; 
+  transition: 0.2s;
 }
 section .imgStyle:hover {
   height: 180px;
@@ -230,7 +231,7 @@ p {
 .review p {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 22px;
-  line-height: 36px;
+  line-height: 15px;
   color: #141618;
   font-weight: 400;
 }
@@ -265,7 +266,7 @@ p {
   text-transform: uppercase;
   cursor: pointer;
   margin-top: 2em;
-  transition: .2s;
+  transition: 0.2s;
 }
 .createAcc button:hover {
   background-color: #278654;
@@ -343,10 +344,9 @@ footer .links {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
-  color:rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
   display: flex;
   flex-direction: column;
-}
 }
 footer .search {
   height: 100px;
@@ -360,7 +360,7 @@ footer h3 {
   line-height: 23px;
   color: white;
 }
- input {
+input {
   height: 50px;
   border-radius: 5px;
   background-color: #21252d;
@@ -381,7 +381,7 @@ footer .searchBtn img {
   border-radius: 5px;
   border: none;
 }
-.footerSearch{
+.footerSearch {
   margin-right: 2em;
   width: 430px;
 }
@@ -393,14 +393,14 @@ footer .lastRow {
   width: 90%;
   display: flex;
   justify-content: flex-start;
-  border-top: 1px solid #e1e1e1;
+  border-top: 1px solid hsla(0, 0%, 100%, 0.05);
   margin-top: 2em;
   color: white;
 }
 .lastRow .links {
   font-family: Helvetica;
   color: white;
-  width: 25%;
+  width: 20%;
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
@@ -411,13 +411,22 @@ footer .lastRow {
 }
 .links a {
   text-decoration: none;
+  color: #a9aaab;
+  text-transform: none;
+  transition: 0.2s;
+}
+.links a:hover {
+  text-decoration: none;
   color: rgba(255, 255, 255, 0.8);
   text-transform: none;
+  transform: scale(1.05);
 }
-.links p{
-  color: rgba(255, 255, 255, 0.8);
+.links p {
+  font-size: 14px;
+  line-height: 16px;
+  color: #a9aaab;
 }
-.links li a{
+.links li a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.8);
 }
