@@ -229,7 +229,7 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 700px;
+  height: 500px;
 }
 footer img {
   height: 35px;
@@ -252,6 +252,8 @@ footer img {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-top: 4em;
+  margin-bottom: 4em;
 }
 footer ul {
   text-transform: uppercase;
@@ -308,4 +310,26 @@ footer .searchBtn img {
 }
 footer .searchtxt {
   display: flex;
+}
+footer .lastRow {
+  height: 100px;
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  border-top: 1px solid #e1e1e1;
+}
+.lastRow .links {
+  font-family: Helvetica;
+  color: white;
+  width: 25%;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  display: flex;
+  justify-content: space-between;
+}
+.links a{
+  text-decoration: none;
+  color: white;
+
 }
